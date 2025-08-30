@@ -26,7 +26,7 @@ const AuthButton = () => {
       } else {
         alert('Check your email for the confirmation link!')
       }
-    } catch (error) {
+    } catch {
       alert('An error occurred during sign up')
     } finally {
       setLoading(false)
@@ -48,7 +48,7 @@ const AuthButton = () => {
       if (error) {
         alert(error.message)
       }
-    } catch (error) {
+    } catch {
       alert('An error occurred during sign in')
     } finally {
       setLoading(false)
@@ -62,7 +62,7 @@ const AuthButton = () => {
       if (error) {
         alert(error.message)
       }
-    } catch (error) {
+    } catch {
       alert('An error occurred during sign out')
     } finally {
       setLoading(false)
